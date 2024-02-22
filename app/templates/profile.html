@@ -1,0 +1,41 @@
+{%  extends 'base.html' %}
+
+{% block main %}
+     <div class="container-fluid">
+            <div class="row">
+                <div class="col top-half">
+                    <div class="profile-img p-3">
+                        <img src="{{ url_for('static', filename="images/gift-habeshaw-KBv5dEN3QtY-unsplash.jpg") }}"
+                             alt="A man's profile photo">
+                    </div>
+                    <h2>Peter-Jon Lawrence</h2>
+                    <h6>@kenshi</h6>
+                    <h6>Kingston, Jamaica</h6>
+                    <h6>{{ date_joined }}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <p class="text-center ms-5 me-5 text-muted mt-2">Sword fights and steamed pork dumplings have my heart. Searching for my next duel.
+                    Trains at Hiritoshi Complex.</p>
+                     <div class="d-flex justify-content-evenly ms-5 me-5" >
+                  <div>
+                    <p class="mb-0 text-center fw-bold">7</p>
+                    <p class="mb-1 text-muted text-center">Posts</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 text-center fw-bold">100</p>
+                    <p class="mb-1 text-muted text-center">Following</p>
+                  </div>
+                  <div>
+                    <p class="mb-0 text-center fw-bold">250</p>
+                    <p class="mb-1 text-muted text-center">Followers</p>
+                  </div>
+                </div>
+                   <div class="d-grid col-4 mx-auto p-4">
+                        <button type="button" class="btn">Follow</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
